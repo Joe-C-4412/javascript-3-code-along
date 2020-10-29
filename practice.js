@@ -27,7 +27,7 @@ Inside this loop, change the value of each property to 0
 
 function objectLooper(number) {
     for (let key in number) {
-        // Code here
+        number[key] = 0 // Code here
     }
     return number;
 };
@@ -51,7 +51,7 @@ If a value is greater than 3,000,000 set it to 0
 
 function stateLooper(obj) {
 	for (let key in obj) {
-		// Code here
+		if(obj[key] > 3000000) obj[key] = 0 // Code here
 	}
 	return obj;
 };
