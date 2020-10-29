@@ -204,7 +204,11 @@ Subtract num2 from num1 and return the result
 
 // Code here
 
-
+const subtraction = (parameter) => {
+    const {num1, num2} = parameter; 
+    const total = num1 - num2; 
+    return total;
+}
 
 ////////// PROBLEM 9 //////////
 
@@ -217,7 +221,11 @@ Using object destructuring, return the total sum of the counts of these animals
 
 // Code here
 
-
+const zooAnimals = (parameter) => {
+    const {lion, tiger, bear} = parameter;
+    const total = lion + tiger + bear; 
+    return total; 
+}
 
 ////////// PROBLEM 10 //////////
 
