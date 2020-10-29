@@ -440,6 +440,13 @@ You should not use a for loop, but should use the filter method instead
 
 // Code here
 
+
+const evens = (numArray) => numArray.filter(element => element % 2 === 0) 
+
+
+
+// let evens = numArray.filter(element => element % 2 === 0)
+
 // const evens = (numArray) => {
 //     const evenNums = numArray.filter(
 // }
@@ -464,7 +471,7 @@ You should not use a for loop, but should use the filter method instead
 //     return element % 2 === 0
 // })
 
-let evens = numArray.filter(element => element % 2 === 0)
+
 
 
 
@@ -483,7 +490,9 @@ You should not use a for loop, but should use the filter method instead
 
 // Code here
 
-let startWithLetterA = lettersArray.filter(element => element )
+// const evens = (numArray) => numArray.filter(element => element % 2 === 0)
+
+const startWithLetterA = (letterArray) => letterArray.startsWith(element => element === 'A')
 
 ////////// PROBLEM 21 //////////
 
