@@ -66,7 +66,10 @@ Once all falsy values and their properties are removed, return the object
 */
 
 function cleanUser(obj) {
-    // Code here
+    for (let key in obj) {
+        if (!obj[key]) delete obj[key]
+    }
+    return obj
 };
 
 
@@ -79,7 +82,12 @@ Return the updated user object
 
 // Code here
 
-
+function maxedOut(obj) {
+    for (let key in obj) {
+        obj[key] = 'max'
+    }
+    return obj
+}
 
 ////////// OBJECT DESTRUCTURING //////////
 
@@ -117,7 +125,7 @@ Destructure this object so that you have 3 distinct variables with values matchi
 
 // Code here
 
-
+const { cats, dogs, mice} = animalCount;
 
 ////////// PROBLEM 6 //////////
 
