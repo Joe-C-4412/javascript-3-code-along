@@ -381,7 +381,7 @@ You should not use the ES5 function declaration or function expression syntax in
 
 // Code here
 
-const gemInfo = (gemType, gemSize, gemWeight) => obj[gemType, gemSize, gemWeight]
+const gemInfo = (gemType, gemSize, gemWeight) => obj[ gemType, gemSize, gemWeight ]
 
 ////////// PROBLEM 18 //////////
 
