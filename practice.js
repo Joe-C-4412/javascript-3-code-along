@@ -381,7 +381,12 @@ You should not use the ES5 function declaration or function expression syntax in
 
 // Code here
 
-const gemInfo = (gemType, gemSize, gemWeight) => obj[ gemType, gemSize, gemWeight ]
+const gemInfo = (gemType, gemSize, gemWeight) => {
+    return {gemType, gemSize, gemWeight}
+}
+
+//Reminder for me... {} actually tell JS that it's an object so I don't define one like obj{}...however, it now negates the {} and I will need to 
+// type out return then {} like above with those parameters inside. 
 
 ////////// PROBLEM 18 //////////
 
@@ -407,6 +412,19 @@ let jobs = [
 
 // Code here
 
+const identifier = () => {
+    const result = jobs.filter(obj => obj.programmer)  
+    return result[0]
+}
+
+// These are the same above and below: 
+
+// function identifier () {
+//     const result = jobs.filter(obj => obj.programmer)  
+//     // console.log(result) 
+//     return result[0]
+// }
+
 
 
 ////////// PROBLEM 19 //////////
@@ -422,7 +440,7 @@ You should not use a for loop, but should use the filter method instead
 
 // Code here
 
-
+// const evens = {[]} => 
 
 ////////// PROBLEM 20 //////////
 
