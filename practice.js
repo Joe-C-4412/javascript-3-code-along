@@ -254,7 +254,9 @@ Title and name in this sentence should be replaced with the values of the destru
 
 // Code here
 
-
+const greeting = ({name, title}) => {
+    return `Hello, ${title} ${name}!` // I need to review this one and test myself again! 
+}
 
 ////////// PROBLEM 11 //////////
 
@@ -267,6 +269,16 @@ Return the value that is truthy
 
 // Code here
 
+// const truthyFalsy = ({number, string}) => number? number: string // this is the ternary example
+
+const truthyFalsy = ({number, string}) => {
+    // return number? number: string 
+    if (number) {
+       return number
+   } else {
+       return string
+   }
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -281,6 +293,9 @@ Your function should also be contained within a single line
 
 // Code here
 
+const isGreaterThanTwenty = p => p > 20? true: false
+
+// isGreaterThanTwenty(2); 
 
 
 ////////// PROBLEM 13 //////////
@@ -294,7 +309,7 @@ Your function should also be contained within a single line
 
 // Code here
 
-
+const seven = () => 7
 
 ////////// PROBLEM 14 //////////
 
@@ -322,7 +337,11 @@ function double(num) {
 
 // Code here
 
+const add = (num1, num2) => num1 + num2 
 
+const subtract = (num1, num2) => num1 - num2
+
+const double = num => num * 2
 
 ////////// PROBLEM 15 //////////
 
@@ -335,7 +354,7 @@ You should not use the ES5 function declaration or function expression syntax in
 
 // Code here
 
-
+const multiply = (num1, num2) => num1 * num2
 
 ////////// PROBLEM 16 //////////
 
@@ -348,7 +367,7 @@ You should not use the ES5 function declaration or function expression syntax in
 
 // Code here
 
-
+const concatenate = (str1, str2) => str1 + str2
 
 ////////// PROBLEM 17 //////////
 
@@ -362,7 +381,7 @@ You should not use the ES5 function declaration or function expression syntax in
 
 // Code here
 
-
+const gemInfo = (gemType, gemSize, gemWeight) => obj[gemType, gemSize, gemWeight]
 
 ////////// PROBLEM 18 //////////
 
