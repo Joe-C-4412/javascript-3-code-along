@@ -440,7 +440,13 @@ You should not use a for loop, but should use the filter method instead
 
 // Code here
 
-// const evens = {[]} => 
+// const evens = (numArray) => {
+//     const evenNums = numArray.filter(
+// }
+
+const evens = numArray.filter(i => i % 2 === 0)
+// numArray.filter(i => i % 2 === 0)
+
 
 ////////// PROBLEM 20 //////////
 
