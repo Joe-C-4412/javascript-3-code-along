@@ -12,10 +12,10 @@
 
 // Do not edit the code below.
 const number = {
-    age: 30,
-	score: 100,
-	length: 12,
-	year: 2016,
+  age: 30,
+  score: 100,
+  length: 12,
+  year: 2016,
 };
 
 // Do not edit the code above.
@@ -26,20 +26,19 @@ Inside this loop, change the value of each property to 0
 */
 
 function objectLooper(number) {
-    for (let key in number) {
-        number[key] = 0 // Code here
-    }
-    return number;
-};
-
+  for (let key in number) {
+    number[key] = 0; // Code here
+  }
+  return number;
+}
 
 ////////// PROBLEM 2 //////////
 
 // Do not edit the code below.
 const state = {
-    utah: 2942902,
-    texas: 26956958,
-    california: 38802500,
+  utah: 2942902,
+  texas: 26956958,
+  california: 38802500,
 };
 
 // Do not edit the code above.
@@ -50,12 +49,11 @@ If a value is greater than 3,000,000 set it to 0
 */
 
 function stateLooper(obj) {
-	for (let key in obj) {
-		if(obj[key] > 3000000) obj[key] = 0 // Code here
-	}
-	return obj;
-};
-
+  for (let key in obj) {
+    if (obj[key] > 3000000) obj[key] = 0; // Code here
+  }
+  return obj;
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -66,12 +64,11 @@ Once all falsy values and their properties are removed, return the object
 */
 
 function cleanUser(obj) {
-    for (let key in obj) {
-        if (!obj[key]) delete obj[key]
-    }
-    return obj
-};
-
+  for (let key in obj) {
+    if (!obj[key]) delete obj[key];
+  }
+  return obj;
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -83,10 +80,10 @@ Return the updated user object
 // Code here
 
 function maxedOut(obj) {
-    for (let key in obj) {
-        obj[key] = 'max'
-    }
-    return obj
+  for (let key in obj) {
+    obj[key] = "max";
+  }
+  return obj;
 }
 
 ////////// OBJECT DESTRUCTURING //////////
@@ -99,25 +96,24 @@ This is the process called destructuring
 */
 
 // const numbers = {
-    // 	one: "1",
-    // 	two: "2",
-    // 	three: "3",
-    // };
-    
+// 	one: "1",
+// 	two: "2",
+// 	three: "3",
+// };
+
 // const { one, two, three } = numbers;
-    
-    
+
 ////////// PROBLEM 5 //////////
-    
+
 // Do not edit the code below.
 var animalCount = {
-    cats: 2,
-    dogs: 5,
-    mice: 0,
+  cats: 2,
+  dogs: 5,
+  mice: 0,
 };
 
 // Do not edit the code above.
-    
+
 /*
 Above you are given the object animalCount
 Destructure this object so that you have 3 distinct variables with values matching those of the properties from animalCount
@@ -146,12 +142,12 @@ Set the value of students to be 24, mentors to be 3, and instructors to be 5
 // Code here
 
 const literal = {
-    students: 24, 
-    mentors: 3, 
-    instructors: 5,
-}; 
+  students: 24,
+  mentors: 3,
+  instructors: 5,
+};
 
-const { students, mentors, instructors} = literal
+const { students, mentors, instructors } = literal;
 
 ////////// PROBLEM 7 //////////
 
@@ -164,12 +160,12 @@ Use destructuring to assign the values of these properties to new variables
 // Code here
 
 const languages = {
-    french: false, 
-    english: true,
-    spanish: true,
+  french: false,
+  english: true,
+  spanish: true,
 };
 
-const { french = true, english = false, spanish = false} = languages
+const { french = true, english = false, spanish = false } = languages;
 
 ////////// PROBLEM 8 //////////
 
@@ -205,10 +201,10 @@ Subtract num2 from num1 and return the result
 // Code here
 
 const subtraction = (parameter) => {
-    const {num1, num2} = parameter; 
-    const total = num1 - num2; 
-    return total;
-}
+  const { num1, num2 } = parameter;
+  const total = num1 - num2;
+  return total;
+};
 
 ////////// PROBLEM 9 //////////
 
@@ -222,10 +218,10 @@ Using object destructuring, return the total sum of the counts of these animals
 // Code here
 
 const zooAnimals = (parameter) => {
-    const {lion, tiger, bear} = parameter;
-    const total = lion + tiger + bear; 
-    return total; 
-}
+  const { lion, tiger, bear } = parameter;
+  const total = lion + tiger + bear;
+  return total;
+};
 
 ////////// PROBLEM 10 //////////
 
@@ -254,9 +250,9 @@ Title and name in this sentence should be replaced with the values of the destru
 
 // Code here
 
-const greeting = ({name, title}) => {
-    return `Hello, ${title} ${name}!` // I need to review this one and test myself again! 
-}
+const greeting = ({ name, title }) => {
+  return `Hello, ${title} ${name}!`; // I need to review this one and test myself again!
+};
 
 ////////// PROBLEM 11 //////////
 
@@ -271,15 +267,14 @@ Return the value that is truthy
 
 // const truthyFalsy = ({number, string}) => number? number: string // this is the ternary example
 
-const truthyFalsy = ({number, string}) => {
-    // return number? number: string 
-    if (number) {
-       return number
-   } else {
-       return string
-   }
-}
-
+const truthyFalsy = ({ number, string }) => {
+  // return number? number: string
+  if (number) {
+    return number;
+  } else {
+    return string;
+  }
+};
 
 ////////// PROBLEM 12 //////////
 
@@ -293,10 +288,9 @@ Your function should also be contained within a single line
 
 // Code here
 
-const isGreaterThanTwenty = p => p > 20? true: false
+const isGreaterThanTwenty = (p) => (p > 20 ? true : false);
 
-// isGreaterThanTwenty(2); 
-
+// isGreaterThanTwenty(2);
 
 ////////// PROBLEM 13 //////////
 
@@ -309,7 +303,7 @@ Your function should also be contained within a single line
 
 // Code here
 
-const seven = () => 7
+const seven = () => 7;
 
 ////////// PROBLEM 14 //////////
 
@@ -337,11 +331,11 @@ function double(num) {
 
 // Code here
 
-const add = (num1, num2) => num1 + num2 
+const add = (num1, num2) => num1 + num2;
 
-const subtract = (num1, num2) => num1 - num2
+const subtract = (num1, num2) => num1 - num2;
 
-const double = num => num * 2
+const double = (num) => num * 2;
 
 ////////// PROBLEM 15 //////////
 
@@ -354,7 +348,7 @@ You should not use the ES5 function declaration or function expression syntax in
 
 // Code here
 
-const multiply = (num1, num2) => num1 * num2
+const multiply = (num1, num2) => num1 * num2;
 
 ////////// PROBLEM 16 //////////
 
@@ -367,7 +361,7 @@ You should not use the ES5 function declaration or function expression syntax in
 
 // Code here
 
-const concatenate = (str1, str2) => str1 + str2
+const concatenate = (str1, str2) => str1 + str2;
 
 ////////// PROBLEM 17 //////////
 
@@ -382,11 +376,11 @@ You should not use the ES5 function declaration or function expression syntax in
 // Code here
 
 const gemInfo = (gemType, gemSize, gemWeight) => {
-    return {gemType, gemSize, gemWeight}
-}
+  return { gemType, gemSize, gemWeight };
+};
 
-//Reminder for me... {} actually tell JS that it's an object so I don't define one like obj{}...however, it now negates the {} and I will need to 
-// type out return then {} like above with those parameters inside. 
+//Reminder for me... {} actually tell JS that it's an object so I don't define one like obj{}...however, it now negates the {} and I will need to
+// type out return then {} like above with those parameters inside.
 
 ////////// PROBLEM 18 //////////
 
@@ -402,30 +396,27 @@ You should not use a for loop, but should use the filter method instead
 
 // Do not edit the code below.
 let jobs = [
-	{ receptionist: "James" },
-	{ programmer: "Steve" },
-	{ designer: "Alicia" },
+  { receptionist: "James" },
+  { programmer: "Steve" },
+  { designer: "Alicia" },
 ];
 
 // Do not edit the code above.
 
-
 // Code here
 
 const identifier = () => {
-    const result = jobs.filter(obj => obj.programmer)  
-    return result[0]
-}
+  const result = jobs.filter((obj) => obj.programmer);
+  return result[0];
+};
 
-// These are the same above and below: 
+// These are the same above and below:
 
 // function identifier () {
-//     const result = jobs.filter(obj => obj.programmer)  
-//     // console.log(result) 
+//     const result = jobs.filter(obj => obj.programmer)
+//     // console.log(result)
 //     return result[0]
 // }
-
-
 
 ////////// PROBLEM 19 //////////
 
@@ -440,10 +431,7 @@ You should not use a for loop, but should use the filter method instead
 
 // Code here
 
-
-const evens = (numArray) => numArray.filter(element => element % 2 === 0) 
-
-
+const evens = (numArray) => numArray.filter((element) => element % 2 === 0);
 
 // let evens = numArray.filter(element => element % 2 === 0)
 
@@ -457,11 +445,10 @@ const evens = (numArray) => numArray.filter(element => element % 2 === 0)
 
 // numArray.filter(i => i % 2 === 0)
 
-
 // const evens = nums.filter(function(e, i, a) {
 //     if (element % 2 === 0) {
 //         return true
-//     } 
+//     }
 // })
 
 // let evens = numArray.filter(element => element % 2 === 0)
@@ -470,10 +457,6 @@ const evens = (numArray) => numArray.filter(element => element % 2 === 0)
 //     evenNums = []
 //     return element % 2 === 0
 // })
-
-
-
-
 
 ////////// PROBLEM 20 //////////
 
@@ -492,7 +475,8 @@ You should not use a for loop, but should use the filter method instead
 
 // const evens = (numArray) => numArray.filter(element => element % 2 === 0)
 
-const startWithLetterA = (letterArray) => letterArray.startsWith(element => element === 'A')
+const startWithLetterA = (array) => array.filter(element => element.toLowerCase().startsWith('a'))
+
 
 ////////// PROBLEM 21 //////////
 
@@ -504,10 +488,8 @@ Make sure to use arrow functions combined with the map method
 */
 
 function formalGreeting(names) {
-    // Code here
+  // Code here
 }
-
-
 
 ////////// PROBLEM 22 //////////
 
@@ -518,6 +500,6 @@ Make sure to use arrow functions combined with the reduce method
 
 */
 
-const productOfArray = numbers => {
-    // Code here
-}
+const productOfArray = (numbers) => {
+  // Code here
+};
