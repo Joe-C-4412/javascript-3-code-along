@@ -125,7 +125,7 @@ Destructure this object so that you have 3 distinct variables with values matchi
 
 // Code here
 
-const { cats, dogs, mice} = animalCount;
+const { cats, dogs, mice } = animalCount;
 
 ////////// PROBLEM 6 //////////
 
@@ -145,7 +145,13 @@ Set the value of students to be 24, mentors to be 3, and instructors to be 5
 
 // Code here
 
+const literal = {
+    students: 24, 
+    mentors: 3, 
+    instructors: 5,
+}; 
 
+const { students, mentors, instructors} = literal
 
 ////////// PROBLEM 7 //////////
 
