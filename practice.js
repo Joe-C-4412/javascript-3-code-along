@@ -444,8 +444,28 @@ You should not use a for loop, but should use the filter method instead
 //     const evenNums = numArray.filter(
 // }
 
-const evens = numArray.filter(i => i % 2 === 0)
+// const evens = numArray.filter(function(numArray)) {
+//     if (numArray % 2 === 0)
+// }
+
 // numArray.filter(i => i % 2 === 0)
+
+
+// const evens = nums.filter(function(e, i, a) {
+//     if (element % 2 === 0) {
+//         return true
+//     } 
+// })
+
+// let evens = numArray.filter(element => element % 2 === 0)
+
+// let evens = nums.filter(function(element, index, array) {
+//     evenNums = []
+//     return element % 2 === 0
+// })
+
+let evens = numArray.filter(element => element % 2 === 0)
+
 
 
 ////////// PROBLEM 20 //////////
@@ -463,7 +483,7 @@ You should not use a for loop, but should use the filter method instead
 
 // Code here
 
-
+let startWithLetterA = lettersArray.filter(element => element )
 
 ////////// PROBLEM 21 //////////
 
@@ -474,7 +494,7 @@ Make sure to use arrow functions combined with the map method
 
 */
 
-const formalGreeting = names => {
+function formalGreeting(names) {
     // Code here
 }
 
