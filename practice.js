@@ -163,7 +163,13 @@ Use destructuring to assign the values of these properties to new variables
 
 // Code here
 
+const languages = {
+    french: false, 
+    english: true,
+    spanish: true,
+};
 
+const { french = true, english = false, spanish = false} = languages
 
 ////////// PROBLEM 8 //////////
 
