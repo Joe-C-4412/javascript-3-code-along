@@ -276,6 +276,7 @@ const truthyFalsy = ({ number, string }) => {
   }
 };
 
+
 ////////// PROBLEM 12 //////////
 
 /*
@@ -389,7 +390,7 @@ Create a function called identifier that uses the filter higher order array meth
 The function should return the object of the person with a job as a programmer
 Make sure to use the arrow function in conjunction with the filter method
 
-Your returned value should be a single object, not an array with one object inside of it
+Your returned value should be a single object, no`t an array with one object inside of it
 You should not use the ES5 function declaration or function expression syntax in your final solution
 You should not use a for loop, but should use the filter method instead
 */
@@ -412,6 +413,7 @@ const identifier = () => {
 
 // These are the same above and below:
 
+
 // function identifier () {
 //     const result = jobs.filter(obj => obj.programmer)
 //     // console.log(result)
@@ -431,7 +433,7 @@ You should not use a for loop, but should use the filter method instead
 
 // Code here
 
-const evens = (numArray) => numArray.filter((element) => element % 2 === 0);
+const evens = (numArray) => numArray.filter(element => element % 2 === 0);
 
 // let evens = numArray.filter(element => element % 2 === 0)
 
@@ -488,7 +490,7 @@ Make sure to use arrow functions combined with the map method
 */
 
 function formalGreeting(names) {
-  // Code here
+  map1 = names.map()// Code here
 }
 
 ////////// PROBLEM 22 //////////
@@ -503,3 +505,5 @@ Make sure to use arrow functions combined with the reduce method
 const productOfArray = (numbers) => {
   // Code here
 };
+
+
