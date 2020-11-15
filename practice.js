@@ -86,6 +86,7 @@ function maxedOut(obj) {
   return obj;
 }
 
+
 ////////// OBJECT DESTRUCTURING //////////
 
 /*
@@ -141,13 +142,16 @@ Set the value of students to be 24, mentors to be 3, and instructors to be 5
 
 // Code here
 
-const literal = {
-  students: 24,
-  mentors: 3,
-  instructors: 5,
-};
 
-const { students, mentors, instructors } = literal;
+// const literal = {
+//   students: 24,
+//   mentors: 3,
+//   instructors: 5,
+// };
+
+// const { students, mentors, instructors } = literal;
+
+const { students, mentors, instructors } = {students: 24, mentors: 3, instructors: 5 }
 
 ////////// PROBLEM 7 //////////
 
@@ -166,6 +170,10 @@ const languages = {
 };
 
 const { french = true, english = false, spanish = false } = languages;
+
+// why does this not work below? Isn't it the same as the example given above in Problem 6? 
+
+// const { french, english, spanish } - {french: true, english: false, spanish: false}
 
 ////////// PROBLEM 8 //////////
 
@@ -200,8 +208,8 @@ Subtract num2 from num1 and return the result
 
 // Code here
 
-const subtraction = (parameter) => {
-  const { num1, num2 } = parameter;
+const subtraction = (obj) => {
+  const { num1, num2 } = obj;
   const total = num1 - num2;
   return total;
 };
@@ -217,8 +225,8 @@ Using object destructuring, return the total sum of the counts of these animals
 
 // Code here
 
-const zooAnimals = (parameter) => {
-  const { lion, tiger, bear } = parameter;
+const zooAnimals = (obj) => {
+  const { lion, tiger, bear } = obj;
   const total = lion + tiger + bear;
   return total;
 };
